@@ -56,7 +56,7 @@ public class TapTest {
         driver.findElementByXPath("//XCUIElementTypeButton[@name=\"robinhood.walkthrough.login\"]").click();
         driver.findElementByAccessibilityId("robinhood.login.password").click();
 
-        String decodePwdStr = new String(Base64.getDecoder().decode("U3N0QDE5NzgwOTA2"));
+        String decodePwdStr = new String(Base64.getDecoder().decode("U3N0QDE5aZTNzgwOTA2"));
         driver.findElementByAccessibilityId("robinhood.login.password").sendKeys(decodePwdStr);
         driver.findElementByAccessibilityId("robinhood.login.button").click();
 
